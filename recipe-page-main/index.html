@@ -5,12 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Young+Serif&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Young+Serif&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | Recipe page</title>
 
@@ -18,190 +12,66 @@
   <style>
     .attribution { font-size: 0.6875rem; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
-    body{
-      background-color: hsl(30, 54%, 90%);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-
-    }
-    .card{
-      background-color: hsl(0, 0%, 100%);
-      border-radius: 18px;
-      padding: 32px;
-      justify-content: center;
-      align-items: center;
-      max-width: 650px;
-
-    }
-    .recipe-img{
-      border-radius: 18px;
-      width: 100%;
-      margin-bottom: 12px;
-    }
-    .main-head{
-      color: hsl(24, 5%, 18%);
-      font-family: "Young Serif";
-      font-weight: 400;
-      font-size: 36px;
-    }
-    .intro{
-      font-family: "Outfit";
-      color: hsl(30, 10%, 34%);
-      font-weight: 400;
-      font-size: 16px;
-    }
-    .timing{
-      background-color: hsl(330, 100%, 98%);
-      border-radius: 16px;
-      padding: 16px;
-    }
-    .sub-head{
-      font-family: "Outfit";
-      font-weight: 700;
-      color: hsl(332, 51%, 32%);
-    }
-    .timing li::marker{
-      color: hsl(332, 51%, 32%);
-    }
-   .bold-text{
-    font-family: "Outfit";
-    font-weight: 600;
-    color: hsl(30, 10%, 34%);
-   }
-   .normal{
-    font-family: "Outfit";
-    font-weight: 400;
-    color: hsl(30, 10%, 34%);
-    font-size: 16px;
-   }
-   .ingred{
-    font-family: "Young Serif";
-    font-weight: 400;
-    color: hsl(14, 45%, 36%);
-   }
-   .list li::marker{
-    color: hsl(14, 45%, 36%);
-   }
-   .list{
-    font-family: "Outfit";
-    font-weight: 400;
-    font-size: 16px;
-    color: hsl(24, 5%, 18%);
-   }
-   .inst{
-    font-family: "Young Serif";
-    font-weight: 400;
-    color: hsl(14, 45%, 36%);
-   }
-   .instrcts li::marker{
-    color: hsl(14, 45%, 36%);
-    font-family: "Outfit";
-    font-weight: 600;
-
-   }
-   .bold{
-    font-family: "Outfit";
-    color: hsl(30, 10%, 34%);
-    font-weight: 600;
-   }
-   .text{
-    font-family: "Outfit";
-    color: hsl(30, 10%, 34%);
-    font-weight: 400;
-    font-size: 16px;
-    display: inline;
-   }
-   .nut{
-    font-family: "Young Serif";
-    font-weight: 400;
-    color: hsl(14, 45%, 36%);
-
-   }
-   .table{
-    width: 100%;
-    border-collapse: collapse;
-   }
-   tr{
-    border-bottom: 1px solid hsl(30, 18%, 87%);;
-   }
-   td{
-    padding: 12px 0;
-    font-family: "Outfit";
-    font-size: 16px;
-    color: hsl(30, 10%, 34%);
-   }
-   .last{
-    color: hsl(14, 45%, 36%);
-    font-weight: 700;
-   }
   </style>
 </head>
 <body>
-  <div class="card">
-   <img src="./assets/images/image-omelette.jpeg" alt="omlette" class="recipe-img">
-   <p class="main-head">Simple Omelette Recipe</p>
-   <p class="intro">An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
-   <div class="timing">
-    <p class="sub-head">Preparation Time</p>
-    <ul>
-      <li><span class="bold-text">Total</span> <span class="normal">: Approximately 10 minutes</span></li>
-      <li><span class="bold-text">Preparation</span><span class="normal">: 5 minutes</span></li>
-      <li><span class="bold-text">Cooking</span><span class="normal">: 5 minutes</span></li>
-    </ul>
 
-   </div>
-   <p class="ingred">Ingredients</p>
-   <div class="list">
-   <ul>
-    <li>2-3 large eggs</li>
-    <li>Salt, to taste</li>
-    <li>Pepper, to taste</li>
-    <li>1tablespoon of butter or oil</li>
-    <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
-   </ul>
-   </div>
-   <hr>
-   <p class="inst">Instructions</p>
-   <div class="instrcts">
-      <ol>
-        <li><span class="bold">Beat the eggs:</span><p class="text">In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. You can add a tablespoon of water or milk for a fluffier texture.</p></li>
-        <li><span class="bold">Heat the pan:</span><p class="text"> Place a non-stick frying pan over medium heat and add butter or oil.</p></li>
-        <li><span class="bold">Cook the omelette:</span><p class="text"> Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly coat the surface.</p></li>
-        <li><span class="bold">Add fillings (optional):</span><p class="text">When the eggs begin to set at the edges but are still slightly runny in the middle, sprinkle your chosen fillings over one half of the omelette.</p></li>
-        <li><span class="bold">Fold and serve:</span><p class="text">As the omelette continues to cook, carefully lift one edge and fold it over the fillings. Let it cook for another minute, then slide it onto a plate.</p></li>
-        <li><span class="bold">Enjoy:</span><p class="text">Serve hot, with additional salt and pepper if needed.</p></li>
+  Simple Omelette Recipe
 
-      </ol>
-   </div>
-   <hr>
-   <p class="nut">Nutrition</p>
-   <table class="table">
-    <tr>
-      <td>Calories</td>
-      <td><span class="last">277kcal</span></td>
-    </tr>
-    <tr>
-      <td>Carbs</td>
-      <td><span class="last">0g</span></td>
-    </tr>
-    <tr>
-      <td>Protein</td>
-      <td><span class="last">20g</span></td>
-    </tr>
-    <tr>
-      <td>Fat</td>
-      <td><span class="last">22g</span></td>
-    </tr>
-    
-   </table>
-  </div>
+  An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
+  to perfection, optionally filled with your choice of cheese, vegetables, or meats.
+
+  Preparation time
+
+  Total: Approximately 10 minutes
+  Preparation: 5 minutes
+  Cooking: 5 minutes
+
+  Ingredients
+
+  2-3 large eggs
+  Salt, to taste
+  Pepper, to taste
+  1 tablespoon of butter or oil
+  Optional fillings: cheese, diced vegetables, cooked meats, herbs
+
+  Instructions
+
+  Beat the eggs: In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
+  You can add a tablespoon of water or milk for a fluffier texture.
+
+  Heat the pan: Place a non-stick frying pan over medium heat and add butter or oil.
+
+  Cook the omelette: Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
+  the eggs evenly coat the surface.
+
+  Add fillings (optional): When the eggs begin to set at the edges but are still slightly runny in the 
+  middle, sprinkle your chosen fillings over one half of the omelette.
+
+  Fold and serve: As the omelette continues to cook, carefully lift one edge and fold it over the 
+  fillings. Let it cook for another minute, then slide it onto a plate.
+
+  Enjoy: Serve hot, with additional salt and pepper if needed.
+
+  Nutrition
+
+  The table below shows nutritional values per serving without the additional fillings.
+
+  Calories
+  277kcal
+
+  Carbs
+  0g
+
+  Protein
+  20g
+
+  Fat
+  22g
   
   <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Mouiz</a>.
+    Coded by <a href="#">Your Name Here</a>.
   </footer>
 </body>
 </html>
